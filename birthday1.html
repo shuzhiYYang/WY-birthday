@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Happy Marriage</title>
+  <title>Happy Birthday</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -66,8 +66,8 @@
       to { opacity: 1; transform: scale(1); }
     }
 
-    /* Hidden Happy Marriage part */
-    #happy-marriage {
+    /* Hidden Happy Birthday part */
+    #happy-birthday {
       display: none;
       width: 100%;
       height: 100%;
@@ -185,8 +185,8 @@
     <button onclick="checkPassword()">Submit</button>
   </div>
 
-  <!-- 🎉 Hidden Happy Marriage Page -->
-  <div id="happy-marriage">
+  <!-- 🎉 Hidden Happy Birthday Page -->
+  <div id="happy-birthday">
     <button id="play-music">Click for Background Music 🎵</button>
 
     <div id="countdown-screen">
@@ -229,11 +229,11 @@
     function checkPassword() {
       const input = document.getElementById("password").value.trim();
       const passwordPage = document.getElementById("password-page");
-      const happyMarriage = document.getElementById("happy-marriage");
+      const happyBirthday = document.getElementById("happy-birthday");
 
       if (validPasswords.includes(input)) {
         passwordPage.style.display = "none";
-        happyMarriage.style.display = "block";
+        happyBirthday.style.display = "block";
         document.body.style.background = "black";
         startCountdown();
       } else {
@@ -268,7 +268,7 @@ const heartShape = [
     }
   }
 
-    // === Marriage Animation Logic ===
+    // === Birthday Animation Logic ===
     const countdownScreen = document.getElementById('countdown-screen');
     const countdownText = document.getElementById('countdown-text');
     const celebrationScreen = document.getElementById('celebration-screen');
